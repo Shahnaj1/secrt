@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JOKES</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="intro">
+          <span>🙂WELCOME TO THE DARK WOLRD OF HOSTEL LIFE🙂</span>
+
+
+        </div>
+        <div class="JOKES">
+              <p id = "joke" class="joke">CLICK THE BUTTON BELOW 👇🏿👇🏿👇🏿 TO GET YOUR SECRET MESSAGE FROM ME😊😊😊</p>
+        </div>
+        <button id = "jokeBtn" class="btn">✌🏿 CLICK ME ✌🏿</button>
+        <button id = "next" class="btn2">🤤AVAILABLE GILRS/BOYS🤤</button>
+
+      </div>
+
+    </div>
+    <script>
+      const bn = document.querySelector('#jokeBtn');
+      const mess = document.querySelector('#joke');
+      const btn2 = document.querySelector('#next');
+
+      message = () =>{
+        mess.innerHTML = "Hello vrom\nkaise ho, koi mili/mila prom💦 night ke leye 😂😂😂 \n ager nahi toh dusra button dabaye aur pata karye kon kon girls/boys abhi available hai aap ke leye\n jaldi dabaye kahi ye offer chala na jaye ";
+        document.querySelector('#next').style.visibility = "visible";
+      }
+      available = () =>{
+        mess.innerHTML = "BADE HI DUKH KAST PEEDA KE SATH KHEHNA CHAHATA HU KE AAP KE LEYE KOI NAHI BACHA/BACHI HAI😂😂😂\n YE SAB HAM SINGLE LOG KE LEYE NAHI HAI😭😭😭"
+        document.querySelector('#next').style.visibility = "hidden";
+        document.querySelector('#jokeBtn').style.visibility = "hidden";
+      }
+
+
+      bn.addEventListener('click',message);
+      btn2.addEventListener('click',available);
+
+
+    </script>
+  </body>
+</html>
